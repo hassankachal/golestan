@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1.0" method="upgrade">
+	<name>COM_GOLESTAN</name>
+	<creationDate>2013-05-18</creationDate>
+	<author>HassanKachal</author>
+	<authorEmail>hassankachal@hotmail.com</authorEmail>
+	<authorUrl>http://www.yahoo.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>1.0.0</version>
+	<description>COM_GOLESTAN_DESCRIPTION</description>
+
+	<install>
+  		<sql>
+    		<file charset="utf8" driver="mysql">install.mysql.sql</file>
+  		</sql>
+	</install>
+
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>languages</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>golestan.php</filename>
+	</files> 
+
+	<scriptfile>install.php</scriptfile>
+
+	<languages folder="site">
+		<language tag="fa-IR">languages/fa-IR/fa-IR.com_golestan.ini</language>
+	</languages>
+
+	<administration>
+		<menu link="option=com_golestan" img="components/com_golestan/assets/images/golestan_icon.png">COM_GOLESTAN</menu>
+		<submenu>
+			<menu view="settings" img="components/com_golestan/assets/images/settings_icon.png" 
+				alt="GOLESTAN/Settings">COM_GOLESTAN_SETTINGS</menu>
+		</submenu>
+
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>languages</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<filename>golestan.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+		</files>  
+
+		<languages folder="admin">
+			<language tag="fa-IR">languages/fa-IR/fa-IR.com_golestan.ini</language>
+			<language tag="fa-IR">languages/fa-IR/fa-IR.com_golestan.sys.ini</language>
+		</languages>
+
+	</administration>
+	
+</extension>
